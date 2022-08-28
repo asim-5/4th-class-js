@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SUM</h1>
+    <form onsubmit="sum();return false">
+        num1: <input type="number"  id="n1">
+        num2: <input type="number"  id="n2">
+        <button type="submit">SUM</button>
+        
+
+    </form>
+    <h2 id="result"></h2>
+    <h1>SUBTRACT</h1>
+    <form onsubmit="sub();return false">
+        num1: <input type="number"  id="sn1">
+        num2: <input type="number"  id="sn2">
+        <button type="submit">SUB</button>
+        
+
+    </form>
+    <h2 id="sresult"></h2>
+    <h1>MULTIPLY</h1>
+    <form onsubmit="mul();return false">
+        num1: <input type="number"  id="mn1">
+        num2: <input type="number"  id="mn2">
+        <button type="submit">MULTIPLY</button>
+        
+
+    </form>
+    <h2 id="mresult"></h2>
+    <h1>DIVIDE</h1>
+    <form onsubmit="div();return false">
+        num1: <input type="number"  id="dn1">
+        num2: <input type="number"  id="dn2">
+        <button type="submit">DIVIDE</button>
+        
+
+    </form>
+    <h2 id="dresult"></h2>
+    <Script>
+    function sum(){
+        let num1=document.querySelector("#n1").value;
+        let num2=document.querySelector("#n2").value;
+        num1=  Number(num1);
+        num2= Number(num2);
+        let result = num1+num2;
+        console.log("number 1 : ",num1);
+        console.log("number 2 : ",num2);
+        console.log("Result = ",result);
+        document.querySelector("#result").innerHTML = result;
+    }
+    function sub(){
+        let snum1=document.querySelector("#sn1").value;
+        let snum2=document.querySelector("#sn2").value;
+        snum1=  Number(snum1);
+        snum2= Number(snum2);
+        let sresult = snum1-snum2;
+        console.log("number 1 : ",snum1);
+        console.log("number 2 : ",snum2);
+        console.log("Result = ",sresult);
+        document.querySelector("#sresult").innerHTML = sresult;
+    }
+    function mul(){
+        let mnum1=document.querySelector("#mn1").value;
+        let mnum2=document.querySelector("#mn2").value;
+        mnum1=  Number(mnum1);
+        mnum2= Number(mnum2);
+        let mresult = mnum1*mnum2;
+        console.log("number 1 : ",mnum1);
+        console.log("number 2 : ",mnum2);
+        console.log("Result = ",mresult);
+        document.querySelector("#mresult").innerHTML = mresult;
+    }
+    function div(){
+        let dnum1=document.querySelector("#dn1").value;
+        let dnum2=document.querySelector("#dn2").value;
+        dnum1=  Number(dnum1);
+        dnum2= Number(dnum2);
+        let dresult = dnum1/dnum2;
+        console.log("number 1 : ",dnum1);
+        console.log("number 2 : ",dnum2);
+        console.log("Result = ",dresult);
+        document.querySelector("#dresult").innerHTML = dresult;
+    }
+    </Script>
+</body>
+</html>
